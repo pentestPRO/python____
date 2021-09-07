@@ -55,19 +55,19 @@ if len(sys.argv) == 3:
         
         def requester(self,fuzz_word):
            
-            self_requsts_url = self.url+ "/" + fuzz_word        
+            self.requsts_url = self.url+ "/" + fuzz_word        
 
 
             try:
-                responce = requests.get(self_requsts_url)
+                responce = requests.get(self.requsts_url)
                 time.sleep(1)
                 self.status_code = responce.status_code
-                if self.status_code == 200:
-                    print(colored(f"{self_requsts_url}                                               {self.status_code}","red"))
+               if self.status_code == 200:
+                    print(colored(f"{self.status_code}                                               {self.requsts_url}","red"))
                 elif self.status_code == 301:
-                    print(colored(f"{self_requsts_url}                                               {self.status_code}","yellow"))
+                    print(colored(f"{self.status_code}                                               {self.requsts_url}","yellow"))
                 elif self.status_code == 403:
-                    print(colored(f"{self_requsts_url}                                               {self.status_code}","blue"))
+                    print(colored(f"{self.status_code}                                               {self.requsts_url}","blue"))
 
                 else:
                     pass
