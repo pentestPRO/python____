@@ -186,5 +186,5 @@ password="Saket!#$%@!!"
 >> got root access.
  
  
- ![image](https://user-images.githubusercontent.com/89301986/148648566-704653ee-7bbc-4377-b833-63ffd24997cc.png)
+ 
 
