@@ -123,7 +123,7 @@ mysql:x:121:129:MySQL Server,,,:/nonexistent:/bin/false
 saket:x:1001:1001:find password.txt file in my directory:/home/saket:
 sshd:x:122:65534::/var/run/sshd:/usr/sbin/nologin
 
->> in output there is password.txt file present is /home/saket directory
+>> in output there is password.txt file present in /home/saket directory
 >> so fetch it and file contains password of wordpress.
 
 # wordpress creds:
@@ -233,7 +233,7 @@ _______________________________________________________________
 
 # ->Exploitation Phase:
 
->> Change the content is secret.php file (add php reverse shell)
+>> Change the content in secret.php file (add php reverse shell)
 >> visit url: http://192.168.0.110/wordpress/wp-content/themes/twentynineteen/secret.php
 >> obtain a reverse shell.
 
